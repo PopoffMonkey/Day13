@@ -6,35 +6,47 @@
     <title>JS Messaround</title>
 </head>
 <body>
-    <h1>Let's learn javascript!</h1>
+    <h1>Let's learn JavaScript!</h1>
     <h2>How do we do onclick events and alerts</h2>
 
     <a href="https://www.youtube.com"
-    onclick="alert('Warning! You are about to leave the page!')"
-    >Clik here to go to youtube</a>
+       onclick="alert('Warning! You are about to leave the page!')">
+       Click here to go to YouTube
+    </a>
 
     <h2>How do we display and hide text?</h2>
     <h2>What's my secret identity?</h2>
     <p id="secret"></p>
     <button onclick="
-    document.getElementById('secret').innerHTML = 'Whip the lasso, I am Wonder Woman';
-    document.getElementById('secret').style.display = 'block';  
+        document.getElementById('secret').innerHTML = 'Whip the lasso, I am Wonder Woman';
+        document.getElementById('secret').style.display = 'block';
     ">Reveal</button>
     
     <button onclick="document.getElementById('secret').style.display = 'none'">Hide</button>
 
-    <h2>How do we change an image with javascript?</h2>
+    <h2>How do we change an image with JavaScript?</h2>
     <img src="images/yellowbulb.jpg" id="myImage" style="height: 200px; width: 200px;">
 
     <button onclick="document.getElementById('myImage').src='images/bublb_off.jpg'">Bulb Off</button>
+    <!-- New button to turn the bulb back on -->
+    <button onclick="document.getElementById('myImage').src='images/yellowbulb.jpg'">Bulb On</button>
 
-    <h2>How do we change styles with a button</h2>
+    <h2>How do we change styles with a button?</h2>
     <p id="alice">Hi. I am Alice!</p>
     <button onclick="document.getElementById('alice').style.color='red'">Make Alice Red</button>
     <button onclick="document.getElementById('alice').style.fontSize='30px'">Cake - Eat Me!</button>
 
-    <button onclick="document.getElementById('alice').style.color='red';
-    document.getElementById('alice').style.fontsize='50px'">Potion - Drink Me</button>
+    <button onclick="
+        document.getElementById('alice').style.color='red';
+        document.getElementById('alice').style.fontSize='50px';
+    ">Potion - Drink Me</button>
 
+    <!-- ✨ New CSS Style Changes -->
+    <button onclick="document.getElementById('alice').style.backgroundColor='lightblue'">
+        Change Background Color
+    </button>
+    <button onclick="document.getElementById('alice').style.border='5px dashed green'">
+        Add Fancy Border
+    </button>
 </body>
 </html>
