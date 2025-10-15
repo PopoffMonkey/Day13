@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Messaround</title>
+</head>
+<body>
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts</h2>
+
+    <a href="https://www.youtube.com"
+    onclick="alert('Warning! You are about to leave the page!')"
+    >Clik here to go to youtube</a>
+
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="
+    document.getElementById('secret').innerHTML = 'Whip the lasso, I am Wonder Woman!'
+    ">Reveal</button>
+    
+    <button onclick="document.getElementById('secret').style.display = 'none'">Hide</button>
+
+</body>
+</html>
