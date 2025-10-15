@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Messaround</title>
+    <style>
+        @keyframes moveAlice {
+            0% {
+                transform: translateX(0);
+                background-color: lightblue;
+            }
+            50% {
+                transform: translateX(200px);
+                background-color: yellow;
+            }
+            100% {
+                transform: translateX(0);
+                background-color: lightgreen;
+            }
+        }
+
+        .animateAlice {
+            animation: moveAlice 3s ease-in-out;
+        }
+    </style>
 </head>
 <body>
     <h1>Let's learn JavaScript!</h1>
@@ -41,12 +61,23 @@
         document.getElementById('alice').style.fontSize='50px';
     ">Potion - Drink Me</button>
 
-    <!-- ✨ New CSS Style Changes -->
+    <!--  New CSS Style Changes -->
     <button onclick="document.getElementById('alice').style.backgroundColor='lightblue'">
         Change Background Color
     </button>
     <button onclick="document.getElementById('alice').style.border='5px dashed green'">
         Add Fancy Border
     </button>
+
+    <!--  Animation Button -->
+    <button onclick="
+        let alice = document.getElementById('alice');
+        alice.classList.remove('animateAlice'); 
+        void alice.offsetWidth; 
+        alice.classList.add('animateAlice');
+    ">
+        Animate Alice 
+    </button>
 </body>
 </html>
+
